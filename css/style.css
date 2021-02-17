@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    border: solid 2px black;
+}
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+}
+
+main {
+display: flex;
+
+max-width: 1100px;
+margin: auto;
+border: solid 2px black;
+
+}
+
+.pokemon {
+    flex-direction: row;
+}
+.search{
+    background-color: yellow;
+    flex-direction: column;
+}
+.pokemonsearch {
+    background-color: red;
+}
+
+.pokemoninfo {
+    background-color: green;
+}
+/*
+.pokemonsearch {
+    border: solid 2px black;
+    height: 800px;
+    margin: 10px;
+    width: 300px;
+}
+
+.pokemoninfo {
+    margin: 10px;
+    border: solid 2px black;
+}*/
