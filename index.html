@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script defer="true" src="main.js"></script>
+    <script defer="true" src="/JSProject/Js/index.js"></script>
+    <script defer="true" src="/JsProject/Js/pokeApi.js"></script>
     <title>Document</title>
 </head>
 <header>
@@ -16,26 +17,36 @@
         
         <div class="pokemon">
             <div class="pokemonsearch">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reiciendis minima impedit quas? Expedita, quisquam error? Earum porro quisquam qui ipsam eligendi reiciendis. Quod distinctio, veritatis fuga placeat molestiae ipsa doloribus doloremque officia repudiandae nihil sed necessitatibus eos alias. Nihil, natus minus! Ipsa porro modi fugit, culpa itaque deleniti iusto?</p>
+                <ul class="searchList">
+              
+                    
+                    <li><a>Pokemon1</a></li>
+                    <li><a>Pokemon2</a></li>
+                    <li><a>Pokemon3</a></li>
+                    
+                  </ul>
             </div>
             <div class="pokemoninfo">
-               
-                    <pre id="pokemonlist">
-
-
-
-                    </pre>
-                
-                
-
-                <!--
+                          
+               <!--
+                    <pre id="pokemonlist"></pre>
+                -->
                 <h2 id="pokemon-name">Name</h2>
                 <img src="Images/Pikachu.png" alt="pokemon-image" class="pokemon-image">
-               <button class="profile-btn">Profile</button>
-               <button class="attack-btn">Attack</button>
-               <button class="moves-btn">Moves</button>
-               <button class="evolution-btn">Evolution</button>
-                -->
+               
+               
+                <div class="dropdown">
+                    <button class="profile">Profile</button>
+                    <div class="dropdown-profile">
+                    <p>Profile </p>
+                    </div>
+                    <button class="attack">Attack</button>
+                    <p class="dropdown-attack">Attack</p>
+                    <button class="moves">Moves</button>
+                    <p class="dropdown-moves">Moves</p>
+                    <button class="evolution">Evolution</button>
+                    <p class="dropdown-evolution">Evolution</p>
+                </div>
             </div>
         </div>
     </main>
