@@ -61,3 +61,21 @@ main {
   width: 150px;
   height: 150px;
 }
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+}
+
+.dropdown-profile,
+.dropdown-attack,
+.dropdown-moves,
+.dropdown-evolution {
+  position: relative;
+  background-color: yellow;
+  border: black solid 1px;
+  display: none;
+}
