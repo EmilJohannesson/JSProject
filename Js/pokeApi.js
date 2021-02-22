@@ -1,13 +1,21 @@
-"use scrpit";
+"strict mode";
 
-let pokeApiUrl = new URL("https://pokeapi.co/api/v2/pokemon/1");
+let pokemonSearch = document.querySelector(".searchList");
 
-(async function () {
-  let out = document.querySelector("#pokemonlist");
-  const serverResponse = await fetch(pokeApiUrl);
-  const pokemonInfo = await serverResponse.json();
+fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
+  .then((response) => response.json())
+  .then((pokemonData) =>
+    pokemonData.results.forEach((pokemon) => fetchPokemonStats(pokemon))
+  );
 
-  //out.innerText = pokemonInfo.pokemon;
-
-  console.log(JSON.stringify(pokemonInfo, null, " "));
-})();
+function fetchPokemonStats(pokemon) {
+  let url = pokemon.url;
+  fetch(url)
+    .then((response) => response.json())
+    .then((pokeData) => {
+      //console.log(pokeData);
+      const pokemonInfo = {};
+      pokemonInfo["name"] = pokeData.name;
+      console.log(pokemonInfo);
+    });
+}
