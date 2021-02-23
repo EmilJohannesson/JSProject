@@ -1,6 +1,6 @@
 "strict mode";
 
-let pokemonSearch = document.querySelector(".searchList");
+let pokemonSearch = document.querySelector(".pokemonsearch");
 
 pokemonArray = [];
 
