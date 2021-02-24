@@ -27,24 +27,10 @@ main {
   height: 800px;
 }
 
-.search {
-  background-color: yellow;
-  flex-direction: column;
-  height: 20px;
-  width: 30%;
-}
-
 .pokemon {
   display: flex;
   flex-direction: row;
   height: 750px;
-}
-.pokemonsearch {
-  border-radius: 10px;
-  border: 2px solid red;
-  width: 30%;
-  margin-right: 10px;
-  padding: 10px;
 }
 
 .pokemoninfo {
@@ -81,5 +67,39 @@ main {
 }
 
 .show {
+  display: block;
+}
+
+.search {
+  flex-direction: column;
+  height: 20px;
+  width: 30%;
+
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.liClass,
+.pokemonSearchA:hover:not(.header) {
+  background-color: #eee;
+}
+
+.pokemonsearch {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 30%;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  overflow: auto;
+}
+.liClass,
+.pokemonSearchA,
+.ulClass {
+  background-color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
   display: block;
 }

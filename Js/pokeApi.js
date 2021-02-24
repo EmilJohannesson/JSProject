@@ -24,9 +24,7 @@ function fetchPokemon() {
 
     let text, i;
 
-    plength = pokemonArray.length;
-
-    text = "<ul class='ulClass'>";
+    text = "<ul class='ulClass' id='ulID'>";
     for (i = 0; i < pokemonArray.length; i++) {
       text +=
         "<li class='liClass'>" +
