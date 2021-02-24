@@ -1,6 +1,7 @@
 "strict mode";
 
 let pokemonSearch = document.querySelector(".pokemonsearch");
+let pokemonImage = document.querySelector(".pokemon-image");
 
 pokemonArray = [];
 
@@ -18,18 +19,27 @@ function fetchPokemon() {
       })
     );
   setTimeout(function () {
-    console.log(pokemonArray);
-    console.log(pokemonArray[0]);
+    //console.log(pokemonArray);
+    //console.log(pokemonArray[0]);
 
     let text, i;
 
     plength = pokemonArray.length;
 
-    text = "</ul>";
+    text = "<ul class='ulClass'>";
     for (i = 0; i < pokemonArray.length; i++) {
-      text += "<li>" + pokemonArray[i].name + "</li>";
+      text +=
+        "<li class='liClass'>" +
+        "<a href='#' class='pokemonSearchA'>" +
+        pokemonArray[i].name +
+        "</a>" +
+        "</li>";
     }
     text += "</ul>";
     pokemonSearch.innerHTML = text;
+
+    //createElement-img
+    //få in den i div??
+    //add edventlistener - funktion som sker när jag click <li> på pokemonlist-name
   }, 1000);
 }
