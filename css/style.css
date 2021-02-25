@@ -183,3 +183,8 @@ main {
   display: flex;
   flex-direction: row;
 }*/
+.ulClass img {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
