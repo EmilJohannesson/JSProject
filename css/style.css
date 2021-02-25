@@ -75,9 +75,22 @@ main {
   display: block;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-.ulClass img {
+/*.ulClass img {
   display: block;
   margin-left: auto;
   margin-right: 0;
+}*/
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150px;
+}
+.pokemon-stats {
+  padding: 5px;
 }

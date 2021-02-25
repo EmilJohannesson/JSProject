@@ -28,9 +28,15 @@ function fetchPokemon() {
       `
       <li class='liClass'>
       <a href='#' class='pokemonSearchA'>
-      <div class = "pokemon-card>
-         ${pokemonArray[i].name}
+      <div class = 'pokemon-card'>
+         <h3>${pokemonArray[i].name}</h3>
          <img src='${pokemonArray[i].sprites.front_default}'>
+         <div class = 'pokemon-stats'>
+         <h5>Lite stats 1</h5>
+         <p>pew pew</p>
+         <h5>Lite stats 2</h5>
+         <p>ooof ooof</p>
+         </div>
       </div>
       </a> 
       </li>
