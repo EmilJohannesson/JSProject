@@ -103,3 +103,83 @@ main {
   color: red;
   display: block;
 }
+
+/*
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 200px;
+  border: solid 2px black;
+  margin: auto;
+
+  max-width: 1100px;
+  background-image: url(image/header.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+  border: 2px solid black;
+  max-width: 1100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: auto;
+  border: solid 2px blue;
+  height: 800px;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: row;
+  height: 750px;
+}
+
+.search {
+  flex-direction: column;
+  height: 20px;
+  width: 30%;
+
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.liClass,
+.pokemonSearchA:hover:not(.header) {
+  background-color: #eee;
+}
+
+.pokemonsearch {
+  border-radius: 10px;
+  border: 2px solid yellow;
+
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  overflow: auto;
+  max-width: 1100px;
+
+  height: 750px;
+}
+.liClass,
+.pokemonSearchA,
+.ulClass {
+  background-color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: red;
+  display: block;
+  display: flex;
+  flex-direction: row;
+}*/

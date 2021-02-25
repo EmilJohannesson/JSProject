@@ -29,7 +29,10 @@ function fetchPokemon() {
       text +=
         "<li class='liClass'>" +
         "<a href='#' class='pokemonSearchA'>" +
-        pokemonArray[i].name + "<img src='"+pokemonArray[i].sprites.front_default+"'>" +
+        pokemonArray[i].name +
+        "<img src='" +
+        pokemonArray[i].sprites.front_default +
+        "'>" +
         "</a>" +
         "</li>";
     }
