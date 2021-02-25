@@ -32,10 +32,14 @@ function fetchPokemon() {
          <h3>${pokemonArray[i].name}</h3>
          <img src='${pokemonArray[i].sprites.front_default}'>
          <div class = 'pokemon-stats'>
-         <h5>Lite stats 1</h5>
-         <p>pew pew</p>
-         <h5>Lite stats 2</h5>
-         <p>ooof ooof</p>
+         <h5>Type:</h5>
+         <p>${pokemonArray[i].types[0].type.name}</p>
+          <h5>HP: </h5>
+          <p>${pokemonArray[i].stats[0].base_stat}</p>
+          <h5>Attack:</h5>
+          <p>${pokemonArray[i].stats[1].base_stat}</p>
+          <h5>Defense:</h5>
+          <p>${pokemonArray[i].stats[2].base_stat}</p>
          </div>
       </div>
       </a> 

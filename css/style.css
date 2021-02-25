@@ -86,10 +86,15 @@ main {
 .pokemon-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   border: 2px solid black;
   border-radius: 5px;
   width: 150px;
+}
+
+.pokemon-card img {
+  align-self: center;
+  height: 96px;
+  width: 96px;
 }
 .pokemon-stats {
   padding: 5px;
