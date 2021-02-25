@@ -4,123 +4,16 @@
 }
 
 header {
-  height: 100px;
-  border: solid 2px black;
-  margin: auto;
-  text-align: center;
-  max-width: 1100px;
-}
-
-footer {
-  margin: auto;
-  text-align: center;
-  border: 2px solid black;
-  max-width: 1100px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  max-width: 1100px;
-  margin: auto;
-  border: solid 2px blue;
-  height: 800px;
-}
-
-.pokemon {
-  display: flex;
-  flex-direction: row;
-  height: 750px;
-}
-
-.pokemoninfo {
-  display: flex;
-  flex-direction: column;
-  border: solid 2px green;
-  border-radius: 15px;
-  width: 70%;
-  margin-left: 10px;
-  padding: 10px;
-}
-
-.pokemon-image {
-  width: 150px;
-  height: 150px;
-}
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 5px;
-  position: relative;
-}
-
-.dropdown-profile,
-.dropdown-attack,
-.dropdown-moves,
-.dropdown-evolution {
-  position: relative;
-  background-color: yellow;
-  border: black solid 1px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.search {
-  flex-direction: column;
-  height: 20px;
-  width: 30%;
-
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-.liClass,
-.pokemonSearchA:hover:not(.header) {
-  background-color: #eee;
-}
-
-.pokemonsearch {
-  border-radius: 10px;
-  border: 2px solid black;
-  width: 30%;
-  margin-right: 10px;
-  padding: 5px;
-  background-color: white;
-  overflow: auto;
-}
-.liClass,
-.pokemonSearchA,
-.ulClass {
-  background-color: white;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 20px;
-  color: red;
-  display: block;
-}
-
-/*
-* {
-  padding: 0;
-  margin: 0;
-}
-
-header {
   height: 200px;
   border: solid 2px black;
   margin: auto;
 
   max-width: 1100px;
-  background-image: url(image/header.jpeg);
+  /*background-image: url;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: relative;*/
 }
 
 footer {
@@ -182,7 +75,7 @@ main {
   display: block;
   display: flex;
   flex-direction: row;
-}*/
+}
 .ulClass img {
   display: block;
   margin-left: auto;
