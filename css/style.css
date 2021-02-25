@@ -91,6 +91,10 @@ main {
   width: 150px;
 }
 
+.pokemon-card h3{
+  text-align: center;
+}
+
 .pokemon-card img {
   align-self: center;
   height: 96px;
