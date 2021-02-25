@@ -22,19 +22,19 @@ function fetchPokemon() {
     //console.log(pokemonArray);
     //console.log(pokemonArray[0]);
 
-    let text, i;
-
-    text = "<ul class='ulClass' id='ulID'>";
+    let text = "<ul class='ulClass' id='ulID'>";
     for (i = 0; i < pokemonArray.length; i++) {
-      text +=
-        "<li class='liClass'>" +
-        "<a href='#' class='pokemonSearchA'>" +
-        pokemonArray[i].name +
-        "<img src='" +
-        pokemonArray[i].sprites.front_default +
-        "'>" +
-        "</a>" +
-        "</li>";
+      text += 
+      `
+      <li class='liClass'>
+      <a href='#' class='pokemonSearchA'>
+      <div class = "pokemon-card>
+         ${pokemonArray[i].name}
+         <img src='${pokemonArray[i].sprites.front_default}'>
+      </div>
+      </a> 
+      </li>
+      `
     }
     text += "</ul>";
     pokemonSearch.innerHTML = text;
