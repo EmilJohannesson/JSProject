@@ -9,28 +9,26 @@ const promises = [];
 fetchPokemon();
 
 function fetchPokemon() {
-    //gå igenom alla pokemon och sedan pusha promise till promises
-  for(let i = 1; i<= 151; i++){
+  //gå igenom alla pokemon och sedan pusha promise till promises
+  for (let i = 1; i <= 151; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then((res) => res.json()));
-  }  
+  }
 
   //när alla promises är OK, gör detta (pusha till en array).
-  Promise.all(promises)
-  .then(res => {
-    res.forEach(pokemon => {
+  Promise.all(promises).then((res) => {
+    res.forEach((pokemon) => {
       pokemonArray.push(pokemon);
     });
     //kör funktionen som lägger in dem i sidan
     outputPokemon();
-  })
-  }
+  });
+}
 
-  function outputPokemon() {
-    let text = "<ul class='ulClass' id='ulID'>";
-    for (i = 0; i < pokemonArray.length; i++) {
-      text += 
-      `
+function outputPokemon() {
+  let text = "<ul class='ulClass' id='ulID'>";
+  for (i = 0; i < pokemonArray.length; i++) {
+    text += `
       <li class='liClass'>
       <a href='#' class='pokemonSearchA'>
       <div class = 'pokemon-card'>
@@ -49,13 +47,8 @@ function fetchPokemon() {
       </div>
       </a> 
       </li>
-      `
-    }
-    text += "</ul>";
-    pokemonSearch.innerHTML = text;
+      `;
+  }
+  text += "</ul>";
+  pokemonSearch.innerHTML = text;
 }
-  
-  
-      //createElement-img
-      //få in den i div??
-      //add edventlistener - funktion som sker när jag click <li> på pokemonlist-name

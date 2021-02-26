@@ -7,13 +7,13 @@ header {
   height: 200px;
   border: solid 2px black;
   margin: auto;
-
+  background-image: url(/JSProject/Images/header.jpeg);
   max-width: 1100px;
-  /*background-image: url;
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;*/
+  position: relative;
 }
 
 footer {
@@ -40,16 +40,12 @@ main {
 
 .search {
   flex-direction: column;
-  height: 20px;
+  height: 50px;
   width: 30%;
-
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-.liClass,
-.pokemonSearchA:hover:not(.header) {
-  background-color: #eee;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  margin: 10px;
+  padding: 5px;
 }
 
 .pokemonsearch {
@@ -71,7 +67,7 @@ main {
   padding: 12px;
   text-decoration: none;
   font-size: 20px;
-  color: red;
+
   display: block;
   display: flex;
   flex-direction: row;
@@ -89,9 +85,10 @@ main {
   border: 2px solid black;
   border-radius: 5px;
   width: 150px;
+  color: red;
 }
 
-.pokemon-card h3{
+.pokemon-card h3 {
   text-align: center;
 }
 

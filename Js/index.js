@@ -1,9 +1,8 @@
 "strict mode";
 //funktion för search
 let mySearch = document.querySelector(".search");
-mySearch.addEventListener("keyup", searchPoke);
 
-function searchPoke() {
+mySearch.onkeyup = () => {
   var input, filter, ul, li, a, i, txtValue;
 
   input = document.getElementById("myInput");
@@ -20,13 +19,4 @@ function searchPoke() {
       li[i].style.display = "none";
     }
   }
-}
-
-//function för dropdown
-let btnProfil = document.querySelector(".profile");
-let dropdownProfile = document.querySelector(".dropdown-profile");
-let ddProfil = document.querySelector("#dd-profil");
-
-btnProfil.onclick = function () {
-  ddProfil.classList.toggle("show");
 };
