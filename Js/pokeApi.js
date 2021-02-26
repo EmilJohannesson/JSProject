@@ -3,25 +3,30 @@
 let pokemonSearch = document.querySelector(".pokemonsearch");
 let pokemonImage = document.querySelector(".pokemon-image");
 
-pokemonArray = [];
+let pokemonArray = [];
+const promises = [];
 
 fetchPokemon();
 
 function fetchPokemon() {
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
-    .then((response) => response.json())
-    .then((pokemonData) =>
-      pokemonData.results.forEach((pokemon) => {
-        let url = pokemon.url;
-        fetch(url)
-          .then((response) => response.json())
-          .then((pokeData) => pokemonArray.push(pokeData));
-      })
-    );
-  setTimeout(function () {
-    //console.log(pokemonArray);
-    //console.log(pokemonArray[0]);
+    //gå igenom alla pokemon och sedan pusha promise till promises
+  for(let i = 1; i<= 151; i++){
+    const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+    promises.push(fetch(url).then((res) => res.json()));
+  }  
 
+  //när alla promises är OK, gör detta (pusha till en array).
+  Promise.all(promises)
+  .then(res => {
+    res.forEach(pokemon => {
+      pokemonArray.push(pokemon);
+    });
+    //kör funktionen som lägger in dem i sidan
+    outputPokemon();
+  })
+  }
+
+  function outputPokemon() {
     let text = "<ul class='ulClass' id='ulID'>";
     for (i = 0; i < pokemonArray.length; i++) {
       text += 
@@ -48,9 +53,9 @@ function fetchPokemon() {
     }
     text += "</ul>";
     pokemonSearch.innerHTML = text;
-
-    //createElement-img
-    //få in den i div??
-    //add edventlistener - funktion som sker när jag click <li> på pokemonlist-name
-  }, 1000);
 }
+  
+  
+      //createElement-img
+      //få in den i div??
+      //add edventlistener - funktion som sker när jag click <li> på pokemonlist-name
