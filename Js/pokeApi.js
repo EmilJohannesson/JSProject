@@ -30,22 +30,27 @@ function outputPokemon() {
   for (i = 0; i < pokemonArray.length; i++) {
     text += `
       <li class='liClass'>
-      <a href='#' class='pokemonSearchA'>
+     
       <div class = 'pokemon-card'>
-         <h3>${pokemonArray[i].name}</h3>
-         <img src='${pokemonArray[i].sprites.front_default}'>
+         <h3>${pokemonArray[i].name} </h3>
+         <img src= '${pokemonArray[i].sprites.front_default}'>
+         <h4> # ${pokemonArray[i].id}</h4>
+         <hr>
          <div class = 'pokemon-stats'>
          <h5>Type:</h5>
          <p>${pokemonArray[i].types[0].type.name}</p>
+         <hr>
           <h5>HP: </h5>
           <p>${pokemonArray[i].stats[0].base_stat}</p>
+          <hr>
           <h5>Attack:</h5>
           <p>${pokemonArray[i].stats[1].base_stat}</p>
+          <hr>
           <h5>Defense:</h5>
           <p>${pokemonArray[i].stats[2].base_stat}</p>
          </div>
       </div>
-      </a> 
+    
       </li>
       `;
   }

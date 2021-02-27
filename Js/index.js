@@ -11,8 +11,8 @@ mySearch.onkeyup = () => {
   li = ul.getElementsByClassName("liClass");
 
   for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
+    searchFilter = li[i].getElementsByTagName("h3")[0];
+    txtValue = searchFilter.textContent || searchFilter.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
