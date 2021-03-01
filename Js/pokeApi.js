@@ -32,7 +32,7 @@ function outputPokemon() {
       <li class='liClass'>
      
       <div class = 'pokemon-card'>
-         <h3>${pokemonArray[i].name} </h3>
+         <h3>${pokemonArray[i].name.toUpperCase(1)} </h3>
          <img src= '${pokemonArray[i].sprites.front_default}'>
          <h4> # ${pokemonArray[i].id}</h4>
          <hr>

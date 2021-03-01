@@ -94,8 +94,6 @@ main {
 
 .pokemon-card img {
   align-self: center;
-  /*height: 96px;
-  width: 96px;*/
 
   border-radius: 50%;
   width: 120px;
@@ -105,4 +103,8 @@ main {
 .pokemon-stats {
   padding: 5px;
   text-align: left;
+}
+
+h3 {
+  font-size: 20px;
 }
