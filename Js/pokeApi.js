@@ -27,19 +27,25 @@ function fetchPokemon() {
 
 function outputPokemon() {
   let text = "<ul class='ulClass' id='ulID'>";
+
   for (i = 0; i < pokemonArray.length; i++) {
     text += `
       <li class='liClass'>
      
       <div class = 'pokemon-card'>
-         <h3>${pokemonArray[i].name} </h3>
-         <img src= '${pokemonArray[i].sprites.front_default}'>
-         <h4> # ${pokemonArray[i].id}</h4>
+      
+      <img src= '${pokemonArray[i].sprites.other.dream_world.front_default}'>
+
+         <h3>${
+           pokemonArray[i].name[0].toUpperCase() + pokemonArray[i].name.slice(1)
+         }
+          </h3>
+          
+         
          <hr>
          <div class = 'pokemon-stats'>
          <h5>Type:</h5>
          <p>${pokemonArray[i].types[0].type.name}</p>
-        
          <hr>
           <h5>HP: </h5>
           <p>${pokemonArray[i].stats[0].base_stat}</p>
@@ -52,7 +58,6 @@ function outputPokemon() {
          
          </div>
       </div>
-    
       </li>
       `;
   }
