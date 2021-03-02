@@ -32,13 +32,14 @@ function outputPokemon() {
       <li class='liClass'>
      
       <div class = 'pokemon-card'>
-         <h3>${pokemonArray[i].name.toUpperCase(1)} </h3>
+         <h3>${pokemonArray[i].name} </h3>
          <img src= '${pokemonArray[i].sprites.front_default}'>
          <h4> # ${pokemonArray[i].id}</h4>
          <hr>
          <div class = 'pokemon-stats'>
          <h5>Type:</h5>
          <p>${pokemonArray[i].types[0].type.name}</p>
+        
          <hr>
           <h5>HP: </h5>
           <p>${pokemonArray[i].stats[0].base_stat}</p>
@@ -48,12 +49,14 @@ function outputPokemon() {
           <hr>
           <h5>Defense:</h5>
           <p>${pokemonArray[i].stats[2].base_stat}</p>
+         
          </div>
       </div>
     
       </li>
       `;
   }
+
   text += "</ul>";
   pokemonSearch.innerHTML = text;
 }
