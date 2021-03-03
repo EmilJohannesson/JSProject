@@ -1,4 +1,3 @@
-Ett lexikon för pokémon.
-Funktion för att spara ner pokémon som man har samlat.
+Ett lexikon för pokémon med sökfunktion.
 
 https://emiljohannesson.github.io/JSProject/
