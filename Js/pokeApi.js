@@ -4,11 +4,11 @@ let pokemonSearch = document.querySelector(".pokemonsearch");
 let pokemonImage = document.querySelector(".pokemon-image");
 
 let pokemonArray = [];
-const promises = [];
 
 fetchPokemon();
 
 function fetchPokemon() {
+  const promises = [];
   //gå igenom alla pokemon och sedan pusha promise till promises
   for (let i = 1; i <= 151; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
