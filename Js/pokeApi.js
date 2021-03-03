@@ -16,11 +16,10 @@ function fetchPokemon() {
   }
 
   //när alla promises är OK, gör detta (pusha till en array).
-  Promise.allSettled(promises)
-  .then((res) => {
+  Promise.allSettled(promises).then((res) => {
     res.forEach((pokemon) => {
       if (pokemon.status === "fulfilled") {
-          pokemonArray.push(pokemon.value);
+        pokemonArray.push(pokemon.value);
       }
     });
     //kör funktionen som lägger in dem i sidan
@@ -30,9 +29,9 @@ function fetchPokemon() {
 
 function outputPokemon() {
   try {
-  let text = "<ul class='ulClass' id='ulID'>";
-  for (i = 0; i < pokemonArray.length; i++) {
-    text += `
+    let text = "<ul class='ulClass' id='ulID'>";
+    for (i = 0; i < pokemonArray.length; i++) {
+      text += `
       <li class='liClass'>
      
       <div class = 'pokemon-card id = ${pokemonArray[i].types[0].type.name}'>
@@ -57,10 +56,10 @@ function outputPokemon() {
     
       </li>
       `;
+    }
+    text += "</ul>";
+    pokemonSearch.innerHTML = text;
+  } catch {
+    console.log("DOM error");
   }
-  text += "</ul>";
-  pokemonSearch.innerHTML = text;
-} catch {
-  console.log("DOM error")
-}
 }
