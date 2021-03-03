@@ -35,9 +35,10 @@ function outputPokemon() {
       <li class='liClass'>
      
       <div class = 'pokemon-card id = ${pokemonArray[i].types[0].type.name}'>
-         <h3>${pokemonArray[i].name.toUpperCase(1)} </h3>
-         <img src= '${pokemonArray[i].sprites.front_default}'>
-         <h4> # ${pokemonArray[i].id}</h4>
+      <img src= '${pokemonArray[i].sprites.other.dream_world.front_default}'>
+         <h3>${
+           pokemonArray[i].name[0].toUpperCase() + pokemonArray[i].name.slice(1)
+         } </h3>
          <hr>
          <div class = 'pokemon-stats'>
             <h5>Type:</h5>

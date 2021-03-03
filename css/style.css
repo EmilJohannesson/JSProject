@@ -98,7 +98,8 @@ main {
   padding: 10px;
   width: 100px;
   height: 100px;
-
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30%;
   text-align: center;
   padding: 10px;
   margin: 10px;
@@ -114,61 +115,61 @@ h3 {
 }
 
 .grass {
-  background-color: rgba(0, 128, 0, 0.5);
+  background-color: rgba(0, 128, 0, 0.4);
 }
 
 .fire {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.4);
 }
 
 .water {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.4);
 }
 
 .bug {
-  background-color: rgba(153, 205, 50, 0.5);
+  background-color: rgba(153, 205, 50, 0.4);
 }
 
 .normal {
-  background-color: rgba(245, 245, 220, 0.5);
+  background-color: rgba(245, 245, 220, 0.4);
 }
 
 .poison {
-  background-color: rgba(0, 100, 0, 0.5);
+  background-color: rgba(0, 100, 0, 0.4);
 }
 
 .electric {
-  background-color: rgba(255, 255, 0, 0.5);
+  background-color: rgba(255, 255, 0, 0.4);
 }
 
 .ground {
-  background-color: rgba(222, 184, 135, 0.5);
+  background-color: rgba(222, 184, 135, 0.4);
 }
 
 .fairy {
-  background-color: rgba(255, 182, 193, 0.5);
+  background-color: rgba(255, 182, 193, 0.4);
 }
 
 .fighting {
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: rgba(211, 211, 211, 0.4);
 }
 
 .psychic {
-  background-color: rgba(255, 255, 224, 0.5);
+  background-color: rgba(255, 255, 224, 0.4);
 }
 
 .rock {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(128, 128, 128, 0.4);
 }
 
 .ghost {
-  background-color: rgba(128, 0, 128, 0.493);
+  background-color: rgba(128, 0, 128, 0.493, 0.4);
 }
 
 .ice {
-  background-color: rgba(173, 216, 230, 0.5);
+  background-color: rgba(173, 216, 230, 0.4);
 }
 
 .dragon {
-  background-color: rgba(255, 166, 0, 0.5);
+  background-color: rgba(255, 166, 0, 0.4);
 }
