@@ -173,3 +173,77 @@ h3 {
 .dragon {
   background-color: rgba(255, 166, 0, 0.4);
 }
+.grass:hover {
+  background-color: rgba(0, 128, 0, 0.7);
+  transition: 0.1s;
+}
+
+.fire:hover {
+  background-color: rgba(255, 0, 0, 0.7);
+  transition: 0.1s;
+}
+
+.water:hover {
+  background-color: rgba(0, 0, 255, 0.7);
+  transition: 0.1s;
+}
+
+.bug:hover {
+  background-color: rgba(153, 205, 50, 0.7);
+  transition: 0.1s;
+}
+
+.normal:hover {
+  background-color: rgba(245, 245, 220, 0.7);
+  transition: 0.1s;
+}
+
+.poison:hover {
+  background-color: rgba(0, 100, 0, 0.7);
+  transition: 0.1s;
+}
+
+.electric:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+  transition: 0.1s;
+}
+
+.ground:hover {
+  background-color: rgba(222, 184, 135, 0.7);
+  transition: 0.1s;
+}
+
+.fairy:hover {
+  background-color: rgba(255, 182, 193, 0.7);
+  transition: 0.1s;
+}
+
+.fighting:hover {
+  background-color: rgba(211, 211, 211, 0.7);
+  transition: 0.1s;
+}
+
+.psychic:hover {
+  background-color: rgba(255, 255, 224, 0.7);
+  transition: 0.1s;
+}
+
+.rock:hover {
+  background-color: rgba(128, 128, 128, 0.7);
+  transition: 0.1s;
+}
+
+.ghost:hover {
+  background-color: rgba(128, 0, 128, 0.7);
+  transition: 0.1s;
+}
+
+.ice:hover {
+  background-color: rgba(173, 216, 230, 0.7);
+  transition: 0.1s;
+}
+
+.dragon:hover {
+  background-color: rgba(255, 166, 0, 0.7);
+  transition: 0.1s;
+}
