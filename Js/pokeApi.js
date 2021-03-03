@@ -44,7 +44,7 @@ function outputPokemon() {
             <p>${pokemonArray[i].types[0].type.name}</p>
             <hr>
             <h5>HP: </h5>
-            <p id>${pokemonArray[i].stats[0].base_stat}</p>
+            <p>${pokemonArray[i].stats[0].base_stat}</p>
             <hr>
             <h5>Attack:</h5>
             <p>${pokemonArray[i].stats[1].base_stat}</p>
