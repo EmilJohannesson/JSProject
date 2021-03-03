@@ -16,11 +16,10 @@ function fetchPokemon() {
   }
 
   //när alla promises är OK, gör detta (pusha till en array).
-  Promise.allSettled(promises)
-  .then((res) => {
+  Promise.allSettled(promises).then((res) => {
     res.forEach((pokemon) => {
       if (pokemon.status === "fulfilled") {
-          pokemonArray.push(pokemon.value);
+        pokemonArray.push(pokemon.value);
       }
     });
     //kör funktionen som lägger in dem i sidan
@@ -30,15 +29,18 @@ function fetchPokemon() {
 
 function outputPokemon() {
   try {
-  let text = "<ul class='ulClass' id='ulID'>";
-  for (i = 0; i < pokemonArray.length; i++) {
-    text += `
+    let text = "<ul class='ulClass' id='ulID'>";
+    for (i = 0; i < pokemonArray.length; i++) {
+      text += `
       <li class='liClass'>
      
       <div class = 'pokemon-card'>
-         <h3>${pokemonArray[i].name.toUpperCase(1)} </h3>
-         <img src= '${pokemonArray[i].sprites.front_default}'>
-         <h4> # ${pokemonArray[i].id}</h4>
+      <img src= '${pokemonArray[i].sprites.other.dream_world.front_default}'>
+         <h3>${
+           pokemonArray[i].name[0].toUpperCase() + pokemonArray[i].name.slice(1)
+         } </h3>
+
+         
          <hr>
          <div class = 'pokemon-stats'>
          <h5>Type:</h5>
@@ -57,10 +59,10 @@ function outputPokemon() {
     
       </li>
       `;
+    }
+    text += "</ul>";
+    pokemonSearch.innerHTML = text;
+  } catch {
+    console.log("DOM error");
   }
-  text += "</ul>";
-  pokemonSearch.innerHTML = text;
-} catch {
-  console.log("DOM error")
-}
 }
