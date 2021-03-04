@@ -3,7 +3,7 @@
 let mySearch = document.querySelector(".search");
 
 mySearch.onkeyup = () => {
-  var input, filter, ul, li, i, txtValue;
+  let input, filter, ul, li, i, txtValue;
 
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
